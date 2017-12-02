@@ -1,5 +1,22 @@
-<nav class="navbar fixed-bottom navbar-light bg-light">
+<nav class="card-footer text-muted bg-dark" width="100%">
 {%- if site.show-style-guide %}
-    <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h4>contact</h4>
+                <p>industrieweg 237,<br>Mariakerke</p>
+                <h5>Art Directors</h5><br>
+                <p>Julie Van De Weerd   Tess Van Duysen</p>
+                <p>julievandeweerd@iditory.be   tessvanduysen@iditory.be</p>
+            </div>
+            <div class="col-6">
+                <a href="winkelmandje.html"><button type="button" class="btn btn-secondary"><img src="{{ site.baseurl }}/images/winkelmand.png" alt="icoon student" width="80px"></button></a>
+                <h4>Winkelmandje</h4>
+                <p>Bekijk je winkelmandje</p>
+                <h4>Sitemap</h4>
+                <p>© Copyright 2017 Julie Van De Weerd, Tess Van Duysen</p>
+            </div>
+        </div>
+    </div>
 {%- endif %}
 </nav>
