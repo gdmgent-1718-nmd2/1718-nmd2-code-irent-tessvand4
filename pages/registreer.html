@@ -8,7 +8,7 @@ title: Registreer
 
 <div class="container">
     <div class="row">
-        <div class="col-12">        
+        <div class="col-12">
             <nav aria-label="breadcrumb" role="navigation">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="winkelmandje.html">Winkelmandje</a></li>
@@ -17,40 +17,61 @@ title: Registreer
             </nav>
         </div>
     </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Naam</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*Naam">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Voornaam</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*Voornaam">
+        </div>
+        <div class="row">
+            <div class="col">
+                    <label for="exampleInputEmail1">Academiejaar</label>
+                <input type="text" class="form-control" placeholder="Academiejaar">
+            </div>
+            <div class="col">
+                <label for="exampleInputEmail1">Klas</label>
+                <input type="text" class="form-control" placeholder="Klas">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Geboortedatum</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*Geboortedatum (dd/mm/jjjj)">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*E-mail">
+        </div>
+    </form>
     <div class="row">
         <div class="col-12">
-            <h1 >Registreer je gegevens</h1>
-            <input class="form-control" type="text" placeholder="*Naam">
-            <input class="form-control" type="text" placeholder="*Voornaam">
-            <input class="form-control" type="text" placeholder="Academiejaar"> <input class="form-control" type="text" placeholder="Klas"> 
-            <input class="form-control" type="text" placeholder="Studentennummer">
-            <input class="form-control" type="text" placeholder="*Geboortedatum (dd/mm/jjjj)">
-            <input class="form-control" type="text" placeholder="*E-mail">
             <p>* is verplicht</p>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                            <p>Ik ga akkoord met de algemene voorwaarden</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </span>
-                                <p>Ik wens een nieuwsbrief te ontvangen over recente acties en promoties.</p>
-                        </div>
-                    </div>
-                </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-6">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                        <p>Ik ga akkoord met de algemene voorwaarden.</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <p>Ik wens een nieuwsbrief te ontvangen over recente acties en promoties.</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
             <a href="bevestigen.html"><button type="button" class="btn btn-secondary float-right">Ga verder</button></a>
         </div>
     </div>

@@ -8,7 +8,7 @@ title: Ga verder als student
 
 <div class="container">
     <div class="row">
-        <div class="col-12">        
+        <div class="col-12">
             <nav aria-label="breadcrumb" role="navigation">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="winkelmandje.html">Winkelmandje</a></li>
@@ -20,34 +20,46 @@ title: Ga verder als student
     <div class="row">
         <div class="col-12">
             <h1 >Ga verder als student</h1>
-            <input class="form-control" type="text" placeholder="Studentennummer">
-            <input class="form-control" type="text" placeholder="*E-mail">
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Studentennummer</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*Studentennummer">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*E-mail">
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-12">
             <p>* is verplicht</p>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                            <p>Ik ga akkoord met de algemene voorwaarden</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </span>
-                                <p>Ik wens een nieuwsbrief te ontvangen over recente acties en promoties.</p>
-                        </div>
-                    </div>
-                </div>
         </div>
     </div>
     <div class="row">
-            <div class="col-4">
-                <a href="bevestigen.html"><button type="button" class="btn btn-secondary float-right">Ga verder</button></a>
+        <div class="col-6">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <p>Ik ga akkoord met de algemene voorwaarden.</p>
+                </label>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <p>Ik wens een nieuwsbrief te ontvangen over recente acties en promoties.</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <a href="bevestigen.html"><button type="button" class="btn btn-secondary float-right">Ga verder</button></a>
+        </div>
+    </div>
 </div>
