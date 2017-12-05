@@ -1,0 +1,43 @@
+/*seat booking*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.seat {
+    float: left;
+    display: block;
+    margin: 5px;
+    background: rgb(251, 255, 0);
+    width: 40px;
+    height: 40px;
+}
+
+.seat-select {
+    display: none;
+}
+
+.seat-select:checked+.seat {
+    background: rgb(54, 152, 244);
+}
+/*css julie*/
+/* Deze heb ik gebruikt om de knop van het winkelmandje 
+los te zetten. Nu plakte het bij index.html aan de footer 
+of bij andere pagina's bovenaan aan de navbar */
+.btn {
+    margin: 10px;
+}
+
+/*voor de achtergrondkleur bij tabellen*/
+.bg-tabel {
+    background-color: grey;
+    padding: 20px;
+}
+
+.bg-cel {
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+/*css mezelf*/
