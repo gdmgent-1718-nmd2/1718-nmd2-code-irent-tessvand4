@@ -5,14 +5,12 @@ permalink: /index
 # ─────────────────────
 title: I-ditory!
 ---
-<div class="jumbotron">
-    <h1 class="display-3">Happy students = {{ page.title }}</h1>
-</div>
-    
-<div class="col-12 col-md-6">
-    <h1>Welkom!</h1>    
-    <h2>Beste student van Artevelde,</h2>       
-        <p>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md-6">
+            <h1>Welkom!</h1> 
+            <h2>Beste student van Artevelde,</h2>       
+            <p>
             Eindelijk is hij er! De website waar we al zo lang op wachten en die ons leven heel wat gemakkelijker zal maken!
             <br>
             *Juichende studenten*
@@ -20,36 +18,31 @@ title: I-ditory!
             Wie droomt er niet van, de beste plekjes in het auditorium kunnen vanaf u gereserveerd worden. 
             Zit je graag vooraan, achteraan, aan de zijkant, of in het midden? 
             Aan jou de keuze! Wij zorgen ervoor dat jouw plekje vrij blijft op een moment naar keuze.
-        </p>
-        <p class="kleinelettertjes">
+            </p>
+            <p class="kleinelettertjes">
             *Omdat dit project nog in opbouw is voorzien we momenteel enkel plaatsen in de campus van Mariakerke.
-        </p>
-    </div>
-    
-    <!--de achtergrondkleur van de tekstvakken hebben nu 
-        de standaard achtergrondkleur van een jumbotron.
-        Om de kleur te veranderen, geef je een extra class
-         aan de div en verander je via css de kleur ervan-->
-    <div class="col-12 col-md-6 jumbotron">          
-    <h3>De winnaar van vorige week:</h3>              
-        <p>
+            </p>
+        </div>
+        <div class="col-6 col-md-6 jumbotron achtergrond-jumbo">          
+            <h3>De winnaar van vorige week:</h3>
+            <img src="{{ site.baseurl }}/images/winnaar.jpg" class="img-fluid img-thumbnail float-left winnaar" alt="winnaar" width="45%">            
+            <p>
             Vorige week werd er gezocht naar de correcte coördinaten van een rode stoel op een foto. De winnaar was: Bart Calis.
             Proficiat Bart! Jij mag voor een week lang de achterste rijen stoeltjes uitschakelen zodat je studenten verplicht zijn vooraan te komen zitten!
-        </p>
+            </p>
+        </div>
     </div>
-    
-    <div class="col-12 col-md-6 jumbotron">       
-    <h3>Deze week: Stoelendans!</h3>           
-    <p>
-        Tijdens de middag organiseren wij de stoelendans. 
-        De winnaar wordt beloond met één gratis reservatie. 
-        Moeilijk is het niet om te winnen want onze stoeltjes zijn net gesmeerd en draaien als nooit tevoren!
-        <br><br>
-        Opgelet: Wil je graag meedoen?
-        vergeet je dan zeker niet in te schrijven via het <a href="https://www.facebook.com/events/129795441070780/">facebookevenement!</a>
-    </p>
-    
+    <div class="row">
+        <div class="col-12 col-md-6 jumbotron achtergrond-jumbo">       
+            <h3>Deze week: Stoelendans!</h3>           
+                <p>
+                Tijdens de middag organiseren wij de stoelendans. 
+                De winnaar wordt beloond met één gratis reservatie. 
+                Moeilijk is het niet om te winnen want onze stoeltjes zijn net gesmeerd en draaien als nooit tevoren!
+                <br><br>
+                Opgelet: Wil je graag meedoen?
+                vergeet je dan zeker niet in te schrijven via het <a href="https://www.facebook.com/events/129795441070780/">facebookevenement!</a>
+                </p>
+        </div>
     </div>
-    <div class="container">
-            <a class="btn btn-dark" href="winkelmandje.html">Winkelmandje</a>
-    </div>
+</div>

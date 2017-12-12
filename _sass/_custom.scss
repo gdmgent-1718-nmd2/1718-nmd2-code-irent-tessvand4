@@ -7,10 +7,10 @@
 .seat {
     float: left;
     display: block;
-    margin: 5px;
-    background: rgb(251, 255, 0);
+    background: rgb(255, 166, 0);
     width: 30px;
     height: 30px;
+    margin: 2px;
 }
 
 .seat-select {
@@ -18,12 +18,16 @@
 }
 
 .seat-select:checked+.seat {
-    background: rgb(54, 152, 244);
+    background: red;
 }
-/*css julie*/
-/* Deze heb ik gebruikt om de knop van het winkelmandje 
-los te zetten. Nu plakte het bij index.html aan de footer 
-of bij andere pagina's bovenaan aan de navbar */
+.groen{
+    background: greenyellow;
+    margin: 2px;
+}
+.blauw{
+    background: skyblue;
+    margin: 2px;
+}
 .btn {
     margin: 10px;
 }
@@ -41,3 +45,46 @@ of bij andere pagina's bovenaan aan de navbar */
     padding: 10px;
 }
 /*css mezelf*/
+.achtergrond-jumbo{
+    background-color: #fee4b3;
+}
+.happy{
+    background-color: #9f1255;
+    color: white;
+    margin: none;
+}
+h1{
+    color: #fcbd0b;
+    font-weight: bold;
+    font-size: 68pt;
+}
+h2{
+    color: #fcbd0b;
+    font-weight: bold;
+    font-size: 24pt;
+}
+.winnaar{
+    margin-right: 20px;
+    border: 2px dashed #9f1255;
+}
+.footer{
+    background-color: #9f1255;
+}
+.tekst-footer{
+    color: #fcbd0b;
+}
+.btn-footer{
+    background-color: #9f1255;
+    border: none;
+}
+.btn-footer:hover{
+    background-color: #9f1255;
+}
+.btn-footer:active{
+    background-color: #9f1255;
+}
+.O{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+}
