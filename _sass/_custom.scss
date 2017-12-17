@@ -72,8 +72,11 @@ h2{
     margin-right: 20px;
     border: 2px dashed #9f1255;
 }
+/*footer*/
 .footer{
     background-color: #9f1255;
+    margin: none;
+    padding: none;
 }
 .tekst-footer{
     color: #fcbd0b;
@@ -96,11 +99,8 @@ h2{
 /*button*/
 .wrap {
     float: right;
-	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: 40px;
-	margin-left: 300px;
 	text-align: center;
 }
 
@@ -127,8 +127,14 @@ h2{
 	color: #fcbd0b;
 	box-shadow: $primary 0 0px 0px 40px inset;
 }
+.wrap2 {
+    float: right;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+}
 /*happystudents*/
-.snip1543 {
+.happystudent {
     background-color: #fff;
     color: #ffffff;
     display: inline-block;
@@ -145,23 +151,23 @@ h2{
     transform: translateZ(0);
   }
   
-  .snip1543 *,
-  .snip1543 *:before,
-  .snip1543 *:after {
+  .happystudent *,
+  .happystudent *:before,
+  .happystudent *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.45s ease;
     transition: all 0.45s ease;
   }
   
-  .snip1543 img {
+  .happystudent img {
     backface-visibility: hidden;
     max-width: 100%;
     vertical-align: top;
   }
   
-  .snip1543:before,
-  .snip1543:after {
+  .happystudent:before,
+  .happystudent:after {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -174,17 +180,17 @@ h2{
     transition: all 0.45s ease;
   }
   
-  .snip1543:before {
+  .happystudent:before {
     -webkit-transform: skew(30deg) translateX(-80%);
     transform: skew(30deg) translateX(-80%);
   }
   
-  .snip1543:after {
+  .happystudent:after {
     -webkit-transform: skew(-30deg) translateX(-70%);
     transform: skew(-30deg) translateX(-70%);
   }
   
-  .snip1543 figcaption {
+  .happystudent figcaption {
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -195,8 +201,8 @@ h2{
     padding: 25px 40% 25px 20px;
   }
   
-  .snip1543 figcaption:before,
-  .snip1543 figcaption:after {
+  .happystudent figcaption:before,
+  .happystudent figcaption:after {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -209,24 +215,24 @@ h2{
     z-index: -1;
   }
   
-  .snip1543 figcaption:before {
+  .happystudent figcaption:before {
     -webkit-transform: skew(30deg) translateX(-100%);
     transform: skew(30deg) translateX(-100%);
   }
   
-  .snip1543 figcaption:after {
+  .happystudent figcaption:after {
     -webkit-transform: skew(-30deg) translateX(-90%);
     transform: skew(-30deg) translateX(-90%);
   }
   
-  .snip1543 h3,
-  .snip1543 p {
+  .happystudent h3,
+  .happystudent p {
     margin: 0;
     opacity: 0;
     letter-spacing: 1px;
   }
   
-  .snip1543 h3 {
+  .happystudent h3 {
     font-family: 'Teko', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -234,11 +240,11 @@ h2{
     text-transform: uppercase;
   }
   
-  .snip1543 p {
+  .happystudent p {
     font-size: 0.9em;
   }
   
-  .snip1543 a {
+  .happystudent a {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -247,10 +253,10 @@ h2{
     z-index: 1;
   }
   
-  .snip1543:hover h3,
-  .snip1543.hover h3,
-  .snip1543:hover p,
-  .snip1543.hover p {
+  .happystudent:hover h3,
+  .happystudent.hover h3,
+  .happystudent:hover p,
+  .happystudent.hover p {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 0.9;
@@ -258,32 +264,67 @@ h2{
     transition-delay: 0.2s;
   }
   
-  .snip1543:hover:before,
-  .snip1543.hover:before {
+  .happystudent:hover:before,
+  .happystudent.hover:before {
     -webkit-transform: skew(30deg) translateX(-20%);
     transform: skew(30deg) translateX(-20%);
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
   }
   
-  .snip1543:hover:after,
-  .snip1543.hover:after {
+  .happystudent:hover:after,
+  .happystudent.hover:after {
     -webkit-transform: skew(-30deg) translateX(-10%);
     transform: skew(-30deg) translateX(-10%);
   }
   
-  .snip1543:hover figcaption:before,
-  .snip1543.hover figcaption:before {
+  .happystudent:hover figcaption:before,
+  .happystudent.hover figcaption:before {
     -webkit-transform: skew(30deg) translateX(-40%);
     transform: skew(30deg) translateX(-40%);
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
   }
   
-  .snip1543:hover figcaption:after,
-  .snip1543.hover figcaption:after {
+  .happystudent:hover figcaption:after,
+  .happystudent.hover figcaption:after {
     -webkit-transform: skew(-30deg) translateX(-30%);
     transform: skew(-30deg) translateX(-30%);
     -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+    transition-delay: 0.1s;}
+  
+  .kaart{
+      margin-left: auto;
   }
+
+
+
+
+
+
+  // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .kaart{
+        float: left;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .jumbotron-reservatie  {
+        background-position: center -400px;
+        height: 300px;
+    }
+    .jumbotron-algemeen {
+        height: 300px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
