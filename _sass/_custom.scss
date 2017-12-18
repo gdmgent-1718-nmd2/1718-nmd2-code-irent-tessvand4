@@ -35,17 +35,11 @@
 .btn {
     margin: 10px;
 }
-/*voor de achtergrondkleur bij tabellen*/
-.bg-tabel {
-    background-color: grey;
-    padding: 20px;
-}
-
+/*tabellen*/
 .bg-cel {
-    background-color: lightgrey;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+    background-color: #fee4b3 !important;
+    padding: 20px;
+    color: $primary !important;
 }
 /*css mezelf*/
 .achtergrond-jumbo{
@@ -134,19 +128,34 @@ h2{
 	left: 50%;
 	text-align: center;
 }
-.button-aanmelden{
+.btn-student{
+    margin-right: 55px;
+}
+.btn-student:hover {
+	color: #fcbd0b;
+    box-shadow: $primary 0 0px 0px 50px inset !important;
+    text-decoration: none;
+}
+.btn-registreer{
+    margin-right: 55px;
+}
+.btn-registreer:hover {
+	color: #fcbd0b;
+    box-shadow: $primary 0 0px 0px 60px inset !important;
+    text-decoration: none;
+}
+.btn-secondary{
     background-color: $primary;
     color: #fcbd0b;
     text-decoration: none;
-    border-radius: none !important;
+    border: none;
 }
-.button-aanmelden:hover{
-    background-color: $primary;
-    box-shadow: $primary 0 0px 0px 40px inset;
-    color: #fcbd0b;
+.btn-secondary:hover{
+    background-color: #fcbd0b;
+    color: $primary;
     text-decoration: none;
+    border: none;
 }
-
 /*happystudents*/
 .happystudent {
     background-color: #fff;
@@ -308,7 +317,7 @@ h2{
     transition-delay: 0.1s;}
   
   .kaart{
-      margin-left: auto;
+      margin-left: 100px;
   }
 
 /*sprites*/
@@ -348,6 +357,82 @@ h2{
 .card{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+/*radio button*/
+@keyframes checkIn {
+    0% {top: -1%; height: 10px; width: 24px; margin-left: -12px;}
+    7% {top: -4%; height: 12.5px; width: 22px; margin-left: -11px;}
+    17% {top: -2%; height: 15px; width: 12px; margin-left: -6px;}
+    25% {top: 20%; height: 15px; width: 10px; margin-left: -5px;}
+    30%{top: 102%; height: 10px; width: 28px; margin-left: -14px;}
+    45%{top: 50%; height: 15px; width: 6px; margin-left: -3px; margin-top: -10px}
+    60%{top: 50%; height: 20px; width: 10px; margin-left: -5px;}
+    70%{top: 50%; height: 40px; width: 40px; margin-left: -20px; margin-top: -20px;}
+    80%{top: 50%; height: 32px; width: 32px; margin-left: -16px; margin-top: -16px;}
+    90% {top: 50%; height: 24px; width: 24px; margin-left: -12px; margin-top: -12px;}
+  100% {top: 50%; height: 24px; width: 24px; margin-left: -12px; margin-top: -12px;}
+}
+@keyframes checkOut{
+  0% { overflow: visible; top: 50%; width: 30px; height: 30px; margin-top: -17px; margin-left: -17px; border: 2px solid $blue; opacity: 1;}
+  100% { width: 46px; top: 50%; height: 46px; margin-top: -25px; margin-left: -25px; border: 2px solid $blue; opacity: 0;}
+}
+html, body{
+  // padding: 0;
+  // margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#container{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+input#circle-input{
+  display: none;
+  &:checked + label{
+    &#circle-cont{
+      overflow: hidden;
+      #circle{
+        background: #fcbd0b;
+        animation: checkIn 1s forwards linear 0s 1;
+      }
+    }
+  }
+}
+label{
+  &#circle-cont{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $primary;
+    display: block;
+    position: relative;
+    float: left;
+    overflow: visible;
+    #circle{
+      position: absolute;
+      left: 50%;
+      border-radius: 50%;
+      top: -100%;
+      animation: checkOut 0.25s forwards linear 0s 1;
+    }
+  }
+  &#label-name{
+    color: $primary;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    float: left;
+    font-size: 1.25em;
+    margin: 4px 12px;
+  }
+}
+/*lijst*/
+.lijst{
+    list-style: none;
 }
 
   // Extra small devices (portrait phones, less than 576px)

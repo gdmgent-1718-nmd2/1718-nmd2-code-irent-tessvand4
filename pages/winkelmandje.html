@@ -13,35 +13,34 @@ title: Winkelmandje
             </div>
     </div>
     <div class="row">
-            <div class="col-12 bg-tabel">
-                <h4>Product</h4>
-                <div class="bg-cel">
-                    <img src="#">
-                        <ul>
-                            <li>Rij: 3, Stoel: 6</li>
-                            <li>Lokaal: audi 1</li>
-                            <li>Categorie: C</li>
-                            <li>Datum: 30 november 2017</li>
-                            <li>van 08:45u tot 10:15u</li>
-                        </ul>
-                </div>
-                <div class="bg-cel">
-                    <h4>Aantal</h4>
-                    <p>1</p>
-                </div>  
-                <div class="bg-cel">
-                    <h4>Prijs</h4>
-                    <p>€ 3,00-</p>
-                </div>        
-            </div>
-            <div class="bg-cel">
-                <p>Totaal: € 3,00-</p>
-            </div>
+        <div class="col-12">
+            <table class="table">
+                <thead class="bg-cel">
+                    <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Aantal</th>
+                    <th scope="col">Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        <img class="img-fluid" src="{{ site.baseurl }}/images/stoel.jpg" alt="stoel" width="100px">
+                        <p class="float-right">Rij 3, stoel 6<br> lokaal: audi 1<br> Categorie C<br> Datum:<br> 30 november 2017<br> 08:45u-10:15u</p>
+                    </td>
+                    <td>1</td>
+                    <td>€3,00-</td>
+                    </tr>
+                    <tr>
+                    <td><a href="shop.html"><button type="button" class="btn btn-secondary float-left">Verder winkelen</button></a></td>
+                    <td>Totaal:</td>
+                    <td>3,00-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="row">
-        <a class="btn btn-dark float-left" href="shop.html">Verder winkelen</a>
-    </div>
-    <div class="row">
-        <a class="btn btn-primary float-right" href="aanmelden.html">Reserveer</a>
+    <div class="wrap">
+        <a class="link button float-right" href="aanmelden.html">Reserveer</a>
     </div>
 </div>
