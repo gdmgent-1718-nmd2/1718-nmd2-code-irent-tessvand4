@@ -5,56 +5,66 @@ permalink: betalen
 # ─────────────────────
 title: Betalen
 ---
-<div id="container cont">
+
+<div class="container">
     <div class="row">
         <div class="col-12">
+            <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="winkelmandje.html">Winkelmandje</a></li>
+                    <li class="breadcrumb-item"><a href="registreer.html">Registreer je gegevens</a></li>
+                    <li class="breadcrumb-item"><a href="bevestigen.html">Bevestigen</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Betalen</li>
+                </ol>
+            </nav> 
+        </div>
+        <div class="col-12">
             <ul class="lijst">
-                <li><input type="checkbox" id="circle-input"/>
-                    <label for="circle-input" id="circle-cont">
-                      <div id="circle"></div>
-                    </label>
-                    <label for="circle-input" id="label-name">
-                      Bancontact
-                    </label>
+                <li>
+                    <input type="radio" name="rb" id="rb1" class="radio"/>
+                        <label for="rb1" class="radio">Bancontact</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb2" class="radio"/>
+                        <label for="rb2" class="radio">Visa</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb3" class="radio"/>
+                        <label for="rb3" class="radio">IDeal</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb4" class="radio"/>
+                        <label for="rb4" class="radio">Mastercard</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb5" class="radio"/>
+                        <label for="rb5" class="radio">Maestro</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb6" class="radio"/>
+                        <label for="rb6" class="radio">Paypal</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb7" class="radio"/>
+                        <label for="rb7" class="radio">Sofort banking</label>
+                </li>
+                <li>
+                    <input type="radio" name="rb" id="rb8" class="radio"/>
+                        <label for="rb8" class="radio">Overschrijving</label>
                 </li>
             </ul>
         </div>
     </div>
     <div class="row">
-            <div class="col-12">
-                <ul class="lijst">
-                    <li><input type="checkbox" id="circle-input"/>
-                        <label for="circle-input" id="circle-cont">
-                          <div id="circle"></div>
-                        </label>
-                        <label for="circle-input" id="label-name">
-                          Bancontact
-                        </label>
-                    </li>
-                </ul>
+        <div class="col-12">
+            <a href="registreer.html"><button type="button" class="btn btn-secondary float-left">Terug naar mijn gegevens</button></a></td>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="wrap2">
+                <a class="link button verder" href="bedankt.html">Ga verder</a>
             </div>
         </div>
-        <div class="row">
-                <div class="col-12">
-                    <ul class="lijst">
-                        <li><input type="checkbox" id="circle-input"/>
-                            <label for="circle-input" id="circle-cont">
-                              <div id="circle"></div>
-                            </label>
-                            <label for="circle-input" id="label-name">
-                              Bancontact
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-</div>
-    
-<div class="row">
-    <div class="wrap">
-        <a class="link button float-left" href="registreer.html">Terug naar mijn gegevens</a>
-    </div>
-    <div class="wrap">
-        <a class="link button float-right" href="bedankt.html">Ga verder</a>
     </div>
 </div>
