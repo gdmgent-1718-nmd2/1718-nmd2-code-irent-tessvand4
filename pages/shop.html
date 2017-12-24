@@ -18,14 +18,14 @@ title: Shop
     <h2>Hoe werkt het?</h2>
         <p>Hieronder zie je een schema van het auditorium. Klik op de stoel die je wenst.</p>
         <br>
-    <h3>Categorie A: € 6,00-</h3>
+    <h3 class="categorie-a">Categorie A: € 6,00-</h3>
         <p>Stoelen aan de zijkant van het auditorium. 
             Op deze plaatsen - en dat weten jullie (studenten) als geen ander - heb je veel plaats. 
             Je bevindt je het dichtst bij de nooduitgang. 
             En het is ook gemakkelijk als je tijdens een les al eens nood hebt aan een sanitaire ontspanning.</p>
-    <h3>Categorie B: € 4,00-</h3>
+    <h3 class="categorie-b">Categorie B: € 4,00-</h3>
         <p>Dubbele plaats. Zo beleef je zelf een aangename les met voldoende plaats voor al je spullen.</p>
-    <h3>Categorie C: € 3,00-</h3>
+    <h3 class="categorie-c">Categorie C: € 3,00-</h3>
         <p>Heb jij het bekende ik-zit-niet-graag-vooraan-virus? 
             Of heb je stiekem een crush op je docent en ga je juist heel graag vooraan zitten 
             maar vind je al die extra plaats toch wat overbodig? 
@@ -35,7 +35,7 @@ title: Shop
 
 <div class="container">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-12">
                             <form id="reservation" method="post" action="test.php">
                                 <section id="seats">
                                     <input id="seat-1" class="seat-select" type="checkbox" value="1" name="seat[]" />
@@ -336,7 +336,7 @@ title: Shop
             <img src="{{ site.baseurl }}/images/happystudent2.jpg" alt="happy student 2">
         <figcaption>
           <h3>Tess en Julie</h3>
-          <p>Door onze bestelling bij IDitory hebben we elkaar leren kennen en zijn we goede vrienden geworden</p>
+          <p>Door onze bestelling bij IDitory hebben we elkaar leren kennen en zijn we goede vrienden geworden.</p>
         </figcaption>
         <a href="#"></a>
       </figure>

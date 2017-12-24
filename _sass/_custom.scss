@@ -1,10 +1,13 @@
 /*algemeen*/
-.grotetekst{
-    font-size: 60pt;
+h1{
+    font-size: 40pt;
 }
 
-
-
+/*kaart google*/
+.googlemaps{
+    width: 350px;
+    height: 350px;
+}
 /*seat booking*/
 * {
     margin: 0;
@@ -14,11 +17,11 @@
 .seat {
     float: left;
     display: block;
-    background: rgb(255, 166, 0);
-    width: 30px;
-    height: 30px;
+    background: $primary;
+    width: 20px;
+    height: 20px;
     margin: 2px;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 
 .seat-select {
@@ -26,22 +29,36 @@
 }
 
 .seat-select:checked+.seat {
-    background: red;
+    background: #fee4b3;
 
 }
 .groen{
-    background: greenyellow;
+    background: #fcbd0b;
     margin: 2px;
-    border-radius: 20px;
 }
 .blauw{
-    background: skyblue;
+    background: #0FCEEB;
     margin: 2px;
-    border-radius: 20px;
 }
 .btn {
     margin: 10px;
 }
+.categorie-a{
+    background-color: #fcbd0b;
+}
+.categorie-b{
+    background-color: #0FCEEB;
+}
+.categorie-c{
+    background-color: $primary;
+}
+.O{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
 /*tabellen*/
 .bg-cel {
     background-color: #fee4b3 !important;
@@ -64,7 +81,6 @@
 h1{
     color: #fcbd0b;
     font-weight: bold;
-    font-size: 68pt;
 }
 h2{
     color: #fcbd0b;
@@ -73,7 +89,7 @@ h2{
 }
 .winnaar{
     margin-right: 20px;
-    border: 2px dashed #9f1255;
+    border: 2px dashed $primary;
 
 }
 .text-win{
@@ -81,7 +97,7 @@ h2{
 }
 /*footer*/
 .footer{
-    background-color: #9f1255;
+    background-color: $primary;
     margin: none;
     padding: none;
 }
@@ -90,20 +106,16 @@ h2{
     font-size: 7pt;
 }
 .btn-footer{
-    background-color: #9f1255;
+    background-color: $primary;
     border: none;
 }
 .btn-footer:hover{
-    background-color: #9f1255;
+    background-color: $primary;
 }
 .btn-footer:active{
-    background-color: #9f1255;
+    background-color: $primary;
 }
-.O{
-    text-align: center;
-    color: grey;
-    font-weight: bold;
-}
+
 /*button*/
 .wrap {
     float: right;
@@ -334,8 +346,9 @@ h2{
     transition-delay: 0.1s;}
   
   .kaart{
-      margin-left: 100px;
+      margin-left: 20px;
       padding-top: 20px;
+      width: 15rem;
   }
 
 /*sprites*/
@@ -440,20 +453,30 @@ h2{
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    .seat{
-        width: 15px;
-        height: 15px;
-    }
+    
     }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .kaart{
-        float: left;
+        margin-left: 60px;
+        padding-top: 20px;
+        width: 30rem;
+    }
+    h1{
+        font-size: 50pt;
     }
     .seat{
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 13px;
+    }
+    .O{
+        font-size: 15pt;
+    }
+    .googlemaps{
+        width: 600px;
+        height: 350px;
     }
     
 }
@@ -468,8 +491,17 @@ h2{
         height: 300px;
     }
     .seat{
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+    }
+    h1{
+        font-size: 50pt;
+    }
+    .kaart{
+        margin-left: 0px;
+        padding-top: 20px;
+        width: 30rem;
     }
  }
 
